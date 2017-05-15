@@ -1,0 +1,39 @@
+\documentclass{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{systeme}
+\usepackage{amsmath}
+
+\title{MATH Recommender Systems Deliverables}
+\date{May 13th, 2017}
+
+\begin{document}
+\maketitle
+\section{Summary}
+There will be two parts that need to be submitted, a report and the code used. The report should be done in either Latex or Word. The plots for the report can be generated using a tool like matplotlib in Python or they can be done manually in Excel. Using matplotlib is recommended. The code should be done using Eider or a similar tool. 
+
+\section{Report}
+\subsection{Data Preparation}
+The report should cover the rational used in the Data Preparation step. Describe how a data-set should be verified. Describe any normalization that was done to the data. Describe the data structures you used to represent the data in your code. 
+
+\subsection{Modeling the problem}
+This part of the report should contain a general explanation of the model used. That includes:
+\begin{enumerate}
+\item What value is used for k? Why is that an appropriate choice?
+\item What function is used for the objective function? Why was this function chosen? How is it minimized?
+\item Describe the use of randomness to initialize U and V.
+\item Explain the logic behind using a training set and a test set.
+\item Plot of error function over iterations. Use iterations along the x-axis and the values of the error function along the y-axis.
+\end{enumerate}
+
+\subsection{Computing gradients}
+Plot the norm of the gradient with respect to U and V over iterations. Use iterations along the x-axis and the norm along the y-axis
+
+\subsection{Metrics}
+Describe the metric used for evaluating the model on the test set.
+
+\subsection{Summary}
+Summarize the experience and what was learned out of this machine learning project including any modeling, mathematical and algorithmic insights.
+
+\section{Code}
+The code should include everything you used for the project. It should be in a form that would make it possible for other people to generate the data needed for your report by “replaying” your code. An Eider notebook is recommended (eider.corp.amazon.com).
+\end{document}
